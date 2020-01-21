@@ -17,19 +17,29 @@ public class Book implements Cloneable{
      */
     private Date createTime;
     /**
+     * 内容
+     */
+    private Content content;
+    /**
      * 国家
      */
     private String country;
 
-    public Book(String author, Date createTime, String country) {
+    private int page;
+
+    public Book(String author, Date createTime, Content content, String country, Integer page) {
         this.author = author;
         this.createTime = createTime;
+        this.content = content;
         this.country = country;
+        this.page = page;
     }
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+        Book book=(Book)super.clone();
+        book.setContent((Content) content.clone());
+        return book;
     }
 
     @Override
@@ -39,5 +49,46 @@ public class Book implements Cloneable{
                 ", createTime=" + createTime +
                 ", country='" + country + '\'' +
                 '}';
+    }
+
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public Content getContent() {
+        return content;
+    }
+
+    public void setContent(Content content) {
+        this.content = content;
+    }
+
+    public Integer getPage() {
+        return page;
+    }
+
+    public void setPage(Integer page) {
+        this.page = page;
     }
 }
