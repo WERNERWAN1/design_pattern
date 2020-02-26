@@ -11,8 +11,8 @@ public class Test {
      * 当出现在不同时间，采用不同策略时，可以用策略模式。
      * @param args
      */
-    public static void main(String[] args) {
-        CashContext cashContext=new CashContext();
-        cashContext.ContextInterface("strategyA");
-    }
+     public static void main(String[] args) {
+     CashContext cashContext=new CashContext();
+      cashContext.ContextInterface("strategyA");
+     }
 }
