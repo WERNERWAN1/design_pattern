@@ -3,7 +3,7 @@ package yuefanke.cn.decorator;
 /**
  * @author:WanChun
  * @date:2020/1/20 - 11:23
- * @description:
+ * @description: 装饰模式
  */
 public class Test {
 

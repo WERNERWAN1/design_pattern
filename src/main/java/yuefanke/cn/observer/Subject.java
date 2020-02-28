@@ -8,9 +8,9 @@ import java.util.List;
  * @date: 2020/2/26-18:59
  * @description: 主题/抽象通知者
  */
-public  class Subject {
+public abstract class Subject {
 
-    private List<Observer> observerList = new ArrayList<>();
+    private List<Observer> observerList = new ArrayList<Observer>();
 
     /**
      * 添加观察者
