@@ -6,6 +6,7 @@ package yuefanke.cn.strategy;
  * @description: 结算类
  */
 public class CashSuper {
+
     public double acceptCash(){
         return 0;
     }

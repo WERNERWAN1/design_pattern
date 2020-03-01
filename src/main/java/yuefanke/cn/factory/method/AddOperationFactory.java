@@ -5,7 +5,7 @@ package yuefanke.cn.factory.method;
  * @date:2020/1/20 - 16:17
  * @description: 加法工厂类
  */
-public class AddOperationFactory implements IOperation {
+public class AddOperationFactory implements IFactory {
     @Override
     public Operation createOperation() {
         return new AddOperation();
